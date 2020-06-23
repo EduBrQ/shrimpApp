@@ -14,10 +14,29 @@
     "lib": [
       "es2018",
       "dom"
-    ]
-  },
-  "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    ],
+    "paths": {
+      "@shared/models/*": [
+        "app/shared/shared-models/*"
+      ],
+      "@shared/components/*": [
+        "app/shared/shared-components/*"
+      ],
+      "@shared/modules/*": [
+        "app/shared/shared-modules/*"
+      ],
+      "@env/*": [
+        "environments/*"
+      ],
+      "@shared/directives/*": [
+        "app/shared/shared-directives/*"
+      ],
+      "@core/*": [
+        "app/core/*"
+      ]
+    },
+    "angularCompilerOptions": {
+      "fullTemplateTypeCheck": true,
+      "strictInjectionParameters": true
+    }
   }
-}
