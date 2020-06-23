@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SimNaoEnum } from 'src/app/shared/shared-models/enum/sim-nao.enum';
+import { SimNaoEnum } from '@shared/models/enum/sim-nao.enum';
 
 @Injectable()
 export class EnumUtilsService {

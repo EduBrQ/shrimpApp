@@ -2,16 +2,16 @@ import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 
 @Injectable()
-export class AtualizarRequerimentosCardService {
+export class AtualizarCardService {
 
   private subject = new Subject<any>();
 
   public notificarCard(req: string): void {
-      this.subject.next({ text: req });
+    this.subject.next({ text: req });
   }
 
   public getRequerimento(): Observable<any> {
-      return this.subject.asObservable();
+    return this.subject.asObservable();
   }
 
 }

@@ -1,0 +1,69 @@
+<div class="container-fluid bg-light d-print-none">
+    <nav class="navbar navbar-expand-lg">
+
+        <a class="navbar-brand" href="#">
+            <img class="img-logo" src="assets/img/logo_pbh_v2.svg" alt="Logo">
+        </a>
+
+        <div class="div-vertical mr-3"></div>
+
+        <span class="titulo"><b>Parcelamento do Solo</b></span>
+
+        <div class="nav-btn-outter ml-auto" *ngIf="isLogged()">
+            <div class="nav-btn">
+
+                <div *ngIf="!camposFaltantesRT; else tooltip">
+                    <button *ngIf="permissaoUsuario()" class="btn btn-requerimento" (click)="novoRequerimento()">Novo
+                        requerimento</button>
+                </div>
+
+                <ng-template #tooltip>
+                    <button *ngIf="permissaoUsuario()" class="btn btn-requerimento btn-disabled" placement="bottom"
+                        [tooltip]="texto">Novo
+                        requerimento</button>
+                </ng-template>
+
+                <div *ngIf="permissaoAcoes()" class="dropdown">
+                    <a class="nav-item nav-link text-dark dropdown-toggle color-hover" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ações
+                    </a>
+
+                    <ul class="dropdown-menu multi-level multi-nav" role="menu" aria-labelledby="dropdownMenu">
+                        <li class="dropdown-item" (click)="pesquisarRegra()">
+                            <a>Gerenciar Regras</a>
+                        </li>
+                        <li class="dropdown-item" (click)="docNecessaria()">
+                            <a>Gerenciar Documentação</a>
+                        </li>
+
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item">Designar Análise Documental</a>
+                            <ul class="dropdown-menu sub-analise">
+                                <li class="dropdown-item" (click)="designarAnalise()">
+                                    <a>Designar Análise</a>
+                                </li>
+                                <li class="dropdown-item" (click)="requerimentosEmAnalise()">
+                                    <a>Meus Requerimentos
+                                        Designados</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown-item" (click)="realizarAnalise()">
+                            <a>Analisar Isenção de Guias</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <a class="nav-item nav-link text-dark color-hover" (click)="pesquisarRequerimento()">Pesquisar</a>
+                <a class="nav-item nav-link text-dark color-hover" (click)="alteracaoSenha()">Alteração de senha</a>
+                <a (click)="navegarAjuda()" class="nav-item nav-link text-dark color-hover">Ajuda</a>
+                <a class="nav-item nav-link text-dark color-hover" (click)="sair()">Sair</a>
+            </div>
+        </div>
+
+    </nav>
+</div>

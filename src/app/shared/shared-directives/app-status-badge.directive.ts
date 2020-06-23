@@ -1,7 +1,7 @@
 import { Directive, ElementRef, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 import { StatusRequerimentoEnumBadge } from './../shared-models/enum/status-requerimento.enum';
-import { StatusRequerimentoEnum } from 'src/app/shared/shared-models/enum/status-requerimento.enum';
+import { StatusRequerimentoEnum } from '@shared/models/enum/status-requerimento.enum';
 @Directive({
     selector: '[appStatusBadge]'
 })

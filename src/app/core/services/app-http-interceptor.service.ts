@@ -1,13 +1,13 @@
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpResponse } from '@angular/common/http';
-import HttpStatusCode from 'src/app/shared/shared-models/enum/http-status.enum';
-import { MensagemEnum } from 'src/app/shared/shared-models/enum/mensagem.enum';
-import { TipoAppResponseEnum } from 'src/app/shared/shared-models/enum/tipo-app-response.enum';
-import { AppResponsePadraoModel } from 'src/app/shared/shared-models/interface/app-response-padrao.model';
+import HttpStatusCode from '@shared/models/enum/http-status.enum';
+import { MensagemEnum } from '@shared/models/enum/mensagem.enum';
+import { TipoAppResponseEnum } from '@shared/models/enum/tipo-app-response.enum';
+import { AppResponsePadraoModel } from '@shared/models/interface/app-response-padrao.model';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
-import { AuthControlService } from './auth-control.serice';
+import { AuthControlService } from './auth-control.service';
 
 export class AppHttpInterceptor implements HttpInterceptor {
   static exibindoSpinner = false;

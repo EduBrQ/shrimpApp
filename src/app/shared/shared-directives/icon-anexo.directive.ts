@@ -2,7 +2,7 @@
 import { Directive, OnChanges, ElementRef, Input } from '@angular/core';
 
 import { IconAnexoEnum, IconAnexoEnumBadge } from './../shared-models/enum/icon-anexo.enum';
-import { TiposExtensao } from 'src/app/shared/shared-models/enum/tipos-extensao.enum';
+import { TiposExtensao } from '@shared/models/enum/tipos-extensao.enum';
 
 @Directive({
   selector: '[appIconAnexo]'

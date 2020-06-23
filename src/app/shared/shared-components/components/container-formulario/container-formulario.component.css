@@ -1,0 +1,17 @@
+.card-form-box {
+    background-color: white;
+    padding: 35px;
+    box-shadow: 0 1px 19px #00000045;
+    min-height: 50px;
+}
+
+.card-table-box {
+    background-color: white;
+    padding: 2%;
+    box-shadow: 0 1px 19px #00000045;
+    min-height: 50px;
+}
+
+.row-titulo {
+    height: 40px;
+}

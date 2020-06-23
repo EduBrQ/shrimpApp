@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'environments/environment';
-import { AutenticacaoModel } from 'src/app/shared/shared-models/interface/autenticacao.model';
+import { AutenticacaoModel } from '@shared/models/interface/autenticacao.model';
 
 @Injectable()
 export class LoginCasService {

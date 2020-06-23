@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { TipoRequerimentoEnumMensagem, TipoRequerimentoEnum } from 'src/app/shared/shared-models/enum/tipo-requerimento.enum';
+import { TipoRequerimentoEnumMensagem, TipoRequerimentoEnum } from '@shared/models/enum/tipo-requerimento.enum';
 
 @Pipe({
     name: 'tipoRequerimentoTradutor'

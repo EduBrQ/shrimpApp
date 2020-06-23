@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { StatusRequerimentoEnumMensagem, StatusRequerimentoEnum } from 'src/app/shared/shared-models/enum/status-requerimento.enum';
+import { StatusRequerimentoEnumMensagem, StatusRequerimentoEnum } from '@shared/models/enum/status-requerimento.enum';
 
 @Pipe({
     name: 'statusRequerimentoTradutor'

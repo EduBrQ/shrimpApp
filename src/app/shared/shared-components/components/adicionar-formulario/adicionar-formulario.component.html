@@ -1,0 +1,16 @@
+<div class="container-fluid container-lista-form">
+  <div class="row card-lista-form" *ngIf="visivel">
+    <div class="col-12">
+      <div class="card-lista-form-box text-center">
+        <h6 *ngIf="formModel?.descricao !== null">{{formModel?.descricao}}</h6>
+        <button class="btn btn-primary btn-sm btn-card-lista" (click)="adicionar()"
+          *ngIf="(!formModel?.link && formModel?.onClick != null) else btnLink"
+          [disabled]="disableButton">{{formModel?.textoBtn || 'Adicione aqui as informações'}}</button>
+        <ng-template #btnLink>
+          <button class="btn btn-primary btn-sm btn-card-lista" (click)="adicionar()"
+            [disabled]="disableButton">{{formModel?.textoBtn || 'Adicione aqui as informações'}}</button>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

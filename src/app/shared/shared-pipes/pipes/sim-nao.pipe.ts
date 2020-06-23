@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { SimNaoEnumMensagem } from 'src/app/shared/shared-models/enum/sim-nao.enum';
+import { SimNaoEnumMensagem } from '@shared/models/enum/sim-nao.enum';
 
 @Pipe({
     name: 'simNaoTradutor'

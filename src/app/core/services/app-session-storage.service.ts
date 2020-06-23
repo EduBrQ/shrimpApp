@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SessionStorageKeyEnum } from 'src/app/shared/shared-models/enum/session-storage-key.enum';
+import { SessionStorageKeyEnum } from '@shared/models/enum/session-storage-key.enum';
 
 @Injectable()
 export class SessionStorageService {

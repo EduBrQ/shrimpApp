@@ -1,0 +1,12 @@
+<div [ngClass]="{ 'mb-3': !removerMarginBottom }" class="container container-lista-form">
+  <div class="row card-form">
+    <div class="col-12 text-left row-titulo" *ngIf="titulo">
+      <span class="{{ tituloClasse }}" [innerHTML]="titulo"></span>
+    </div>
+    <div class="col-12">
+      <div [ngClass]=" removerEstilizacao ? ' ' : 'card-form-box' ">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+</div>

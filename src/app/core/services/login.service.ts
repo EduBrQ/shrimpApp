@@ -1,6 +1,6 @@
 import { environment } from './../../../environments/environment';
 import { HttpClient, HttpBackend } from '@angular/common/http';
-import { AutenticacaoModel } from 'src/app/shared/shared-models/interface/autenticacao.model';
+import { AutenticacaoModel } from '@shared/models/interface/autenticacao.model';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 

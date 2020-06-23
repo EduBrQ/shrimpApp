@@ -1,0 +1,16 @@
+.texto-footer {
+    font-size: 12px;
+    padding-top: 3%;
+}
+
+.logo-footer {
+    width: 150px;
+}
+
+.remover-margin {
+    margin-bottom: 0px
+}
+
+.reduzir-padding-top {
+    padding-top: 5px
+}
