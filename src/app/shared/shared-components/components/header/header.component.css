@@ -117,3 +117,8 @@ span.titulo {
 .sub-analise {
     width: fit-content
 }
+
+.bordered-transparency{
+  background-color: rgba(255, 255, 255, 0.9)!important;
+  border-radius: 10px;
+}

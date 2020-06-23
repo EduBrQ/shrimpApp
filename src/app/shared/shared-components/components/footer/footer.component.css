@@ -4,7 +4,7 @@
 }
 
 .logo-footer {
-    width: 150px;
+    width: 50px;
 }
 
 .remover-margin {
@@ -13,4 +13,8 @@
 
 .reduzir-padding-top {
     padding-top: 5px
+}
+
+* {
+  box-sizing: border-box;
 }
