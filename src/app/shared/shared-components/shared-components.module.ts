@@ -14,7 +14,13 @@ import { InputListaRadioComponent } from "./components/input-lista-radio/input-l
 import { InputContainerComponent } from "./components/input/input-container.component";
 import { ListaVaziaComponent } from "./components/lista-vazia/lista-vazia.component";
 import { PopoverComponent } from "./components/popover/popover.component";
-
+import { ChartsModule } from 'ng2-charts';
+import { LineChartComponent } from './components/line-chart/line-chart.component';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
+import { BubbleChartComponent } from './components/bubble-chart/bubble-chart.component';
+import { PieChartComponent } from './components/pie-chart/pie-chart.component';
+import { RadarChartComponent } from './components/radar-chart/radar-chart.component';
+import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -27,6 +33,12 @@ import { PopoverComponent } from "./components/popover/popover.component";
     BreadcrumbComponent,
     ListaVaziaComponent,
     PopoverComponent,
+    LineChartComponent,
+    BarChartComponent,
+    BubbleChartComponent,
+    PieChartComponent,
+    RadarChartComponent,
+    DoughnutChartComponent,
   ],
   exports: [
     HeaderComponent,
@@ -38,7 +50,13 @@ import { PopoverComponent } from "./components/popover/popover.component";
     InputListaCheckboxComponent,
     BreadcrumbComponent,
     ListaVaziaComponent,
-    PopoverComponent
+    PopoverComponent,
+    LineChartComponent,
+    BarChartComponent,
+    BubbleChartComponent,
+    PieChartComponent,
+    RadarChartComponent,
+    DoughnutChartComponent,
   ],
   entryComponents: [
   ],
@@ -53,6 +71,7 @@ import { PopoverComponent } from "./components/popover/popover.component";
     ReactiveFormsModule,
     SharedDirectivesModule,
     FormsModule,
+    ChartsModule
   ],
 })
 export class SharedComponentsModule { }

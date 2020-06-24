@@ -6,7 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./container-formulario.component.css']
 })
 export class ContainerFormularioComponent implements OnInit {
-  
   @Input() titulo: string;
   @Input() tituloClasse = 'h6';
   @Input() removerPadding = false;

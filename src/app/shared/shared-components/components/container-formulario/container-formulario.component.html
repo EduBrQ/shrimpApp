@@ -4,7 +4,7 @@
       <span class="{{ tituloClasse }}" [innerHTML]="titulo"></span>
     </div>
     <div class="col-12">
-      <div [ngClass]=" removerEstilizacao ? ' ' : 'card-form-box' ">
+      <div [ngClass]=" removerEstilizacao ? ' ' : 'card-form-box' " class="bordered">
         <ng-content></ng-content>
       </div>
     </div>

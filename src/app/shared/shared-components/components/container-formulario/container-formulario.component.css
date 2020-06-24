@@ -15,3 +15,7 @@
 .row-titulo {
     height: 40px;
 }
+
+.bordered {
+  border-radius: 8px;
+}

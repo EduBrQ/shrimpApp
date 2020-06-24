@@ -1,18 +1,18 @@
 <app-header titulo="Dashboard"></app-header>
 
-<div class="container">
-
-
-  <!-- <div class="row">
-    <div class="col-12 text-center">
-      <div id="grafico">
-        <canvas baseChart [data]="[0,2, 0,3, 0,5]" [chartType]="doughnut" [colors]="graficoCores"
-          [options]="graficoOptions">
-        </canvas>
-        <span class="chart-text">{{ graficoTexto }}</span>
+<div style="width: 600px; margin-left: unset;" class="container">
+  <app-container-formulario titulo="Gráfico de barras">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div id="grafico">
+          <app-bar-chart></app-bar-chart>
+        </div>
       </div>
     </div>
-  </div> -->
-
-
+    <!-- <app-line-chart></app-line-chart>
+      <app-bubble-chart></app-bubble-chart>
+      <app-bar-chart></app-bar-chart>
+      <app-doughnut-chart></app-doughnut-chart>
+      <app-pie-chart></app-pie-chart> -->
+  </app-container-formulario>
 </div>
