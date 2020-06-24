@@ -13,7 +13,6 @@ import { ValidacaoFormularioModule } from './shared/shared-modules/validacao-for
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { DataUtilService } from './shared/util/data-util.service';
 import { SharedComponentsModule } from './shared/shared-components/shared-components.module';
-
 @NgModule({
   declarations: [
     AppComponent
@@ -33,7 +32,7 @@ import { SharedComponentsModule } from './shared/shared-components/shared-compon
     PublicModule,
     PrivateModule,
     CoreModule,
-    SharedComponentsModule
+    SharedComponentsModule,
   ],
   providers: [
     DataUtilService,

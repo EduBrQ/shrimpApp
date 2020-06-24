@@ -10,8 +10,9 @@
 }
 
 .linha-options {
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 230px;
+  margin-left: 230px;
+  margin-top: 12%;
 }
 
 * {
@@ -65,8 +66,12 @@
   background-color: #fff;
 }
 
+// .panel, .panel-center, .popover {
+//   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1), 0 2px 15px 0 rgba(0, 0, 0, .1)
+// }
+
 .panel, .panel-center, .popover {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1), 0 2px 15px 0 rgba(0, 0, 0, .1)
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 5px 5px 15px 5px rgba(207, 87, 17, 0.1)
 }
 
 .panel-body {
@@ -76,13 +81,11 @@
 .home-acesso-interno-esquerdo{
   position: absolute;
   z-index: 100;
-  top: 0;
   border-radius: 100px 0 200px 19px;
   cursor: pointer;
   color: #333;
   text-decoration: none;
-  width: 48%;
-  height: 15%;
+  width: 35%;
 }
 
 .home-acesso-interno {
