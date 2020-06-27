@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
     "bootstrap": "^5.0.0-alpha1",
+    "bootstrap-icons": "^1.0.0-alpha5",
     "chart.js": "^2.9.3",
     "jquery": "^3.5.1",
     "jwt-decode": "^2.2.0",
