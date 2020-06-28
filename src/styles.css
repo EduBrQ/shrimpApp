@@ -304,13 +304,21 @@ body {
   width: fit-content;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 10px;
+  border-radius: 200px;
   background: #fff;
-  margin-left: 10px;
-  box-shadow: 0 1px 19px #00000045
+  background-color: cadetblue;
+  box-shadow: 0 3px 19px;
 }
 
 .container-header h2 {
   text-align: center;
   font-size: 26px;
+}
+
+.container-valor {
+  background-color: white;
+    padding: 35px;
+    box-shadow: 0 1px 19px #00000045;
+    min-height: 50px;
+    border-radius: 15px 50px;
 }
