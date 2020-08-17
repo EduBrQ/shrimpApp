@@ -1,0 +1,30 @@
+<app-header></app-header>
+<app-container-formulario tituloClasse="h4" titulo="Viveiro {{viveiro.id}}">
+  <div class="animation-fade row">
+    <div class="col-md-4 d-flex justify-content-center text-center container mb-4 mt-4">
+      <app-container-formulario>
+        <table class="table" style="font-size: larger; font-family: monospace;">
+          <thead>
+            <tr>
+              <th>Início</th>
+              <th>Densidade</th>
+              <th>Laboratório</th>
+              <th>Tamanho</th>
+              <th>Proprietário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>{{viveiro.dataInicioCiclo}}</th>
+              <th>{{viveiro.densidade}}</th>
+              <th>{{viveiro.laboratorio}}</th>
+              <th>{{viveiro.tamanho}} m²</th>
+              <th>{{viveiro.proprietario}}</th>
+            </tr>
+          </tbody>
+        </table>
+      </app-container-formulario>
+    </div>
+
+  </div>
+</app-container-formulario>

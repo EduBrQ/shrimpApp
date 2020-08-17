@@ -11,6 +11,9 @@ import { TemperaturaComponent } from './components/medidas/temperatura/temperatu
 import { RacaoComponent } from './components/racao/racao.component';
 import { AeradoresComponent } from './components/aeradores/aeradores.component';
 import { AeradorComponent } from './components/aeradores/aerador/aerador.component';
+import { ViveiroComponent } from './components/viveiros/viveiro/viveiro.component';
+import { MedicoesComponent } from './components/viveiros/viveiro/medicoes/medicoes.component';
+import { ListaViveirosComponent } from './components/viveiros/lista-viveiros.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { AeradorComponent } from './components/aeradores/aerador/aerador.compone
     TemperaturaComponent,
     RacaoComponent,
     AeradoresComponent,
-    AeradorComponent],
+    AeradorComponent,
+    ViveiroComponent,
+    ListaViveirosComponent,
+    MedicoesComponent],
   imports: [
     CommonModule,
     PublicRoutingModule,

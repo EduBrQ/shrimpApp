@@ -3,10 +3,17 @@
     <div class="col-12 text-left row-titulo" *ngIf="titulo">
       <span class="{{ tituloClasse }}" [innerHTML]="titulo"></span>
     </div>
+
     <div class="col-12">
-      <div [ngClass]=" removerEstilizacao ? ' ' : 'card-form-box' " class="bordered">
+      <div [ngClass]="backGradient ? 'backGradient' : ''" class=" bordered card-form-box">
         <ng-content></ng-content>
       </div>
     </div>
+
+    <!-- <div *ngIf="!backColor" class="col-12">
+      <div [ngClass]=" removerEstilizacao ? ' ' : 'card-form-box' " class="bordered">
+        <ng-content></ng-content>
+      </div>
+    </div> -->
   </div>
 </div>
