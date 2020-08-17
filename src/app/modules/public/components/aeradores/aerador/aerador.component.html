@@ -1,0 +1,15 @@
+<div class="col-sm">
+  <h6>{{aerador.nome}}</h6>
+  <button [disabled]="loading" (click)="ligarDesligarAerador(aerador)"
+    class="btn-acesso btn-acesso-dir align-self-end mb-2">
+    <img class="img-btn-acesso" src="/assets/img/{{aerador.status}}.svg" alt="">
+    <span class="text-acesso">{{aerador.status ? 'Ligado' : 'Desligado'}}</span>
+  </button>
+  <br>
+
+  <div *ngIf="!loading" style="margin-bottom: 40px;"></div>
+  <div *ngIf="loading" class="spinner-grow text-{{aerador.status ? 'danger' : 'success'}}" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+
+</div>

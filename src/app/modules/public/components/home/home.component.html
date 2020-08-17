@@ -1,12 +1,13 @@
-<img class="img-background" src="assets/img/home5.jpg" alt="">
+<!-- <img class="img-background" src="assets/img/home5.jpg" alt="">
 
 <a class="home-acesso-interno panel">
   <div class="panel-body" title="Acesso interno">Login</div>
-</a>
+</a> -->
+<app-header></app-header>
 
-<div class="container-fuild">
+<app-container-formulario backGradient="true">
 
-  <div class="titulo">
+  <!-- <div class="titulo">
     <app-header></app-header>
 
     <div class="container-fluid">
@@ -35,38 +36,65 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="animation-fade">
-    <div class="row linha-options justify-content-center">
+  </div> -->
+  <div class="animation-fade  row">
+    <!-- <div class="row linha-options justify-content-center"> -->
 
-      <div class="col-md-4 d-flex justify-content-center text-center container">
-        <div class=" box">
-          <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="../pesquisar-requerimento">
-            <img class="img-btn-acesso" src="assets/img/app.svg" alt="">
-            <span class="text-acesso">NOTÍCIAS</span>
-          </button>
-        </div>
+    <div class="col-md-4 d-flex justify-content-center text-center container">
+      <div class=" box">
+        <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="../estrategias">
+          <img class="img-btn-acesso" src="assets/img/estrategia.svg" alt="">
+          <span class="text-acesso">ESTRATÉGIAS</span>
+        </button>
       </div>
-
-      <div class="col-md-4 d-flex justify-content-center text-center container">
-        <div class=" box">
-          <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="../login-proprietario">
-            <img class="img-btn-acesso" src="assets/img/product.svg" alt="">
-            <span class="text-acesso">INSUMOS</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="col-md-4 d-flex justify-content-center text-center container">
-        <div class=" box">
-          <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="../login-proprietario">
-            <img class="img-btn-acesso" src="assets/img/receitas.svg" alt="">
-            <span class="text-acesso">RECEITAS</span>
-          </button>
-        </div>
-      </div>
-
     </div>
+
+    <div class="col-md-4 d-flex justify-content-center text-center container">
+      <div class=" box">
+        <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="../financeiro">
+          <img class="img-btn-acesso" src="assets/img/planilha.svg" alt="">
+          <span class="text-acesso">CONTROLE FINANCEIRO</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center text-center container">
+      <div class=" box">
+        <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="../calculos">
+          <img class="img-btn-acesso" src="assets/img/calculadora2.svg" alt="">
+          <span class="text-acesso">CÁLCULOS</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center text-center container">
+      <div class=" box">
+        <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="../insumos">
+          <img class="img-btn-acesso" src="assets/img/product.svg" alt="">
+          <span class="text-acesso">PRODUTOS</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center text-center container">
+      <div class=" box">
+        <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="../noticias">
+          <img class="img-btn-acesso" src="assets/img/app.svg" alt="">
+          <span class="text-acesso">NOVIDADES</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- <div class="col-md-4 d-flex justify-content-center text-center container">
+      <div class=" box">
+        <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="../receitas">
+          <img class="img-btn-acesso" src="assets/img/receitas.svg" alt="">
+          <span class="text-acesso">RECEITAS</span>
+        </button>
+      </div>
+    </div> -->
+
+    <!-- </div> -->
   </div>
 
-</div>
+</app-container-formulario>

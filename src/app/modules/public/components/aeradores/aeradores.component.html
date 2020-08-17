@@ -1,0 +1,12 @@
+<app-header></app-header>
+
+<app-container-formulario tituloClasse="h4" titulo="Aeradores">
+
+  <div class="row animation-fade">
+    <div *ngFor="let aerador of aeradores; let i = index"
+      class="col-md-4 d-flex justify-content-center text-center container">
+      <app-aerador [aerador]="aerador"></app-aerador>
+    </div>
+  </div>
+
+</app-container-formulario>

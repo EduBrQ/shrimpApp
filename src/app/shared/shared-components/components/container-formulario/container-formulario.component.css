@@ -5,6 +5,10 @@
     min-height: 50px;
 }
 
+.backGradient {
+  background-image: linear-gradient(#e4efe9,#93a5cf) !important;
+}
+
 .card-table-box {
     background-color: white;
     padding: 2%;

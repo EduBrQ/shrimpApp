@@ -32,27 +32,23 @@
 }
 
 .btn-acesso {
-  background-image: linear-gradient(#667eea, #764ba2);
-  width: 250px;
-  height: 83%;
-  border-radius: 10px;
-  padding: 12% 12% 20% 12%;
-  border: 0;
-  box-shadow: -4px 5px 25px -8px black;
+  background-color: rgba(255, 255, 255, 0.95);
+    /* width: 250px; */
+    height: 75%;
+    border-radius: 150px;
+    padding: 12% 12% 20% 12%;
+    border: 0;
+    box-shadow: -4px 5px 25px -8px black;
 }
 
 .btn-acesso:hover {
-  background-image: linear-gradient(#93a5f3, #8263a1);
+  background-color: rgba(238, 237, 237, .95);
   cursor: pointer;
-}
-
-.btn-acesso:active {
-  background-image: red;
 }
 
 .text-acesso {
   text-transform: uppercase;
-  color: white;
+  color: #626262;
   font-size: 14px;
   font-weight: 700;
   display: block;
