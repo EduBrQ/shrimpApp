@@ -43,8 +43,6 @@ export class ListaViveirosComponent implements OnInit {
   }
 
   public visualizarViveiro(viveiroID) {
-    console.log(`../viveiro/${viveiroID}`);
-
     this.router.navigate([`../viveiro/${viveiroID}`]);
   }
 

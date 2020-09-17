@@ -10,6 +10,7 @@ import { ViveiroDTO } from 'app/modules/public/models/interface/viveiro-dto.mode
 export class ViveiroComponent implements OnInit {
   public viveiros: ViveiroDTO[];
   public viveiro: ViveiroDTO;
+  flag = true;
   constructor(private activatedRoute: ActivatedRoute) {
     this.viveiros = [
       {
@@ -60,15 +61,7 @@ export class ViveiroComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log(this.activatedRoute.snapshot.params.id);
-    this.viveiros.map(res => {
-      if (res.id == this.activatedRoute.snapshot.params.id) {
-        this.viveiro = res;
-      }
-    });
-
-
-    console.log(this.viveiro);
+    this.viveiro = this.activatedRoute.snapshot.params.id;
 
   }
 

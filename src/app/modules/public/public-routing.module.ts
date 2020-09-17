@@ -23,20 +23,17 @@ const routes: Routes = [
     component: CamerasComponent
   },
   {
-    path: 'racao',
-    component: RacaoComponent
-  },
-  {
-    path: 'aeradores',
-    component: AeradoresComponent
-  },
-  {
     path: 'viveiros',
     component: ListaViveirosComponent
   },
   {
     path: 'viveiro/:id',
-    component: ViveiroComponent
+    component: ViveiroComponent,
+    children: [
+      { path: 'racao', component: RacaoComponent },
+      { path: 'aeradores', component: AeradoresComponent },
+      { path: 'cameras', component: CamerasComponent }
+    ]
   }
 ];
 
