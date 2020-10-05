@@ -1,12 +1,8 @@
 # ShrimpApp
 
-
-![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss1.PNG?raw=true)
-![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss2.PNG?raw=true)
-![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true)
 <p align="center">
-  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true" width="350" title="hover text">
-  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss1.PNG?raw=true" width="550" title="Tela inicial - (Lista de viveiros/Novo viveiro)">
+  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true" width="550" title="Controle de ração"alt="accessibility text">
 </p>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
