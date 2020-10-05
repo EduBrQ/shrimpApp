@@ -1,12 +1,12 @@
 # ShrimpApp
 
 
-![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss1.png)
-![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss2.jpeg?raw=true)
+![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss1.PNG?raw=true)
+![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss2.PNG?raw=true)
 ![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true)
 <p align="center">
-  <img src="https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss1.png" width="350" title="hover text">
-  <img src="https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss1.png" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true" width="350" title="hover text">
+  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true" width="350" alt="accessibility text">
 </p>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
