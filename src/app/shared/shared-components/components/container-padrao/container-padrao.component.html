@@ -1,4 +1,7 @@
-<div class="painel" [ngClass]="mb">
+<div style="width: 50%;" class="painel" [ngClass]="mb">
+  <div class="col-12 text-left row-titulo" *ngIf="titulo">
+    <span class="{{ tituloClasse }}" [innerHTML]="titulo"></span>
+  </div>
   <div class="card">
     <div class="card-body">
       <ng-content></ng-content>

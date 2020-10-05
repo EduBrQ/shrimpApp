@@ -1,5 +1,14 @@
 <app-header></app-header>
 <app-container-formulario *ngIf="flag" backGradient="true" tituloClasse="h4" titulo="Viveiro {{viveiro}}">
+  <div>
+    Dados do Viveiro:
+
+    {{viveiro.proprietario}}
+    {{viveiro.tamanho}}
+    {{viveiro.densidade}}
+    {{viveiro.laboratorio}}
+    {{viveiro.dataInicioCiclo}}
+  </div>
 
   <!-- <div class="titulo">
     <app-header></app-header>
@@ -36,9 +45,9 @@
 
     <div class="col-md-4 d-flex justify-content-center text-center container">
       <div class=" box">
-        <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="estrategias">
+        <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="feebacks">
           <img class="img-btn-acesso" src="assets/img/estrategia.svg" alt="">
-          <span class="text-acesso">ESTRATÉGIAS</span>
+          <span class="text-acesso">DASHBOARD & RELATÓRIOS</span>
         </button>
       </div>
     </div>
@@ -47,7 +56,7 @@
       <div class=" box">
         <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="racao">
           <img class="img-btn-acesso" src="assets/img/planilha.svg" alt="">
-          <span class="text-acesso">CONTROLE DE MEDIÇÕES</span>
+          <span class="text-acesso">CONTROLE DE RAÇÃO</span>
         </button>
       </div>
     </div>
@@ -63,9 +72,9 @@
 
     <div class="col-md-4 d-flex justify-content-center text-center container">
       <div class=" box">
-        <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="calculos">
+        <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="anotacoes">
           <img class="img-btn-acesso" src="assets/img/calculadora2.svg" alt="">
-          <span class="text-acesso">CÁLCULOS</span>
+          <span class="text-acesso">Medições</span>
         </button>
       </div>
     </div>

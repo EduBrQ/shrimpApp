@@ -21,6 +21,7 @@ import { BubbleChartComponent } from './components/bubble-chart/bubble-chart.com
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 import { RadarChartComponent } from './components/radar-chart/radar-chart.component';
 import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
+import { FieldErrorDisplayComponent } from './components/field-error-display/field-error-display.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -39,6 +40,7 @@ import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-cha
     PieChartComponent,
     RadarChartComponent,
     DoughnutChartComponent,
+    FieldErrorDisplayComponent,
   ],
   exports: [
     HeaderComponent,
@@ -57,6 +59,7 @@ import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-cha
     PieChartComponent,
     RadarChartComponent,
     DoughnutChartComponent,
+    FieldErrorDisplayComponent
   ],
   entryComponents: [
   ],

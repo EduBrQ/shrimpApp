@@ -9,7 +9,8 @@ export class ContainerPadraoComponent implements OnInit {
 
   @Input() title: string;
   @Input() mb = 'mb-4';
-
+  @Input() titulo: string;
+  @Input() tituloClasse = 'h6';
   constructor() { }
 
   ngOnInit() {

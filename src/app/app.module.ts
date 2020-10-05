@@ -6,7 +6,7 @@ import { PrivateModule } from './modules/private/private.module';
 import { PublicModule } from './modules/public/public.module';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedDirectivesModule } from './shared/shared-directives/shared-directives.module';
 import { ValidacaoFormularioModule } from './shared/shared-modules/validacao-formulario/validacao-formulario.module';
@@ -34,7 +34,8 @@ import { ChartsModule } from 'ng2-charts';
     PrivateModule,
     CoreModule,
     SharedComponentsModule,
-    ChartsModule
+    ChartsModule,
+    ReactiveFormsModule
   ],
   providers: [
     DataUtilService,

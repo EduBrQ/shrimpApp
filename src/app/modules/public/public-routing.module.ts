@@ -7,6 +7,8 @@ import { RacaoComponent } from './components/racao/racao.component';
 import { AeradoresComponent } from './components/aeradores/aeradores.component';
 import { ListaViveirosComponent } from './components/viveiros/lista-viveiros.component';
 import { ViveiroComponent } from './components/viveiros/viveiro/viveiro.component';
+import { AnotacoesComponent } from './components/anotacoes/anotacoes.component';
+import { FeedbacksComponent } from './components/feedbacks/feedbacks.component';
 
 
 const routes: Routes = [
@@ -19,10 +21,6 @@ const routes: Routes = [
     component: DashboardComponent,
   },
   {
-    path: 'cameras',
-    component: CamerasComponent
-  },
-  {
     path: 'viveiros',
     component: ListaViveirosComponent
   },
@@ -32,7 +30,9 @@ const routes: Routes = [
     children: [
       { path: 'racao', component: RacaoComponent },
       { path: 'aeradores', component: AeradoresComponent },
-      { path: 'cameras', component: CamerasComponent }
+      { path: 'cameras', component: CamerasComponent },
+      { path: 'anotacoes', component: AnotacoesComponent },
+      { path: 'feebacks', component: FeedbacksComponent }
     ]
   }
 ];

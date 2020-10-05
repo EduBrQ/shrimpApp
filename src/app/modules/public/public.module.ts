@@ -14,6 +14,9 @@ import { AeradorComponent } from './components/aeradores/aerador/aerador.compone
 import { ViveiroComponent } from './components/viveiros/viveiro/viveiro.component';
 import { MedicoesComponent } from './components/viveiros/viveiro/medicoes/medicoes.component';
 import { ListaViveirosComponent } from './components/viveiros/lista-viveiros.component';
+import { AnotacoesComponent } from './components/anotacoes/anotacoes.component';
+import { FeedbacksComponent } from './components/feedbacks/feedbacks.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,15 @@ import { ListaViveirosComponent } from './components/viveiros/lista-viveiros.com
     AeradorComponent,
     ViveiroComponent,
     ListaViveirosComponent,
-    MedicoesComponent],
+    MedicoesComponent,
+    AnotacoesComponent,
+    FeedbacksComponent],
   imports: [
     CommonModule,
     PublicRoutingModule,
     SharedComponentsModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class PublicModule { }

@@ -12,6 +12,7 @@ export class ContainerFormularioComponent implements OnInit {
   @Input() removerEstilizacao = false;
   @Input() removerMarginBottom = false;
   @Input() backGradient = false;
+  @Input() width = '100%';
 
   constructor() { }
 
