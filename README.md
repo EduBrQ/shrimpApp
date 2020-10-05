@@ -1,8 +1,8 @@
 # ShrimpApp
 
 
-![alt text](https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss1.PNG?raw=true)
-![alt text](https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss2.PNG?raw=true)
+![Alt text](https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss1.PNG?raw=true)
+![alt text](https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss2.jpg?raw=true)
 ![alt text](https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ssRacao.PNG?raw=true)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
