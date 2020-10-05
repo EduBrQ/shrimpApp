@@ -1,9 +1,9 @@
 # ShrimpApp
 
 
-![Settings Window](https://raw.github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss1.png)
-![alt text](https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss2.jpeg?raw=true)
-![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ssRacao.PNG?raw=true)
+![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss1.png)
+![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss2.jpeg?raw=true)
+![alt text](https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true)
 <p align="center">
   <img src="https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss1.png" width="350" title="hover text">
   <img src="https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss1.png" width="350" alt="accessibility text">
