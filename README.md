@@ -7,8 +7,8 @@
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss2.PNG?raw=true" width="750" title="Controle de ração"alt="accessibility text">
   <br>
   <label>Tela referente ao Viveiro selecionado e seus respectivos modulos</label>
-  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true" width="750" title="Controle de ração"alt="accessibility text">
-  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacaoModal.PNG?raw=true" width="350" title="Controle de ração"alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true" width="400" title="Controle de ração"alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacaoModal.PNG?raw=true" width="400" title="Controle de ração"alt="accessibility text">
   <br>
   <label>Tela de controle de ração do viveiro</label>
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssCameras.PNG?raw=true" width="750" title="Controle de ração"alt="accessibility text">
