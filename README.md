@@ -2,20 +2,27 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss1.PNG?raw=true" width="750" title="Tela inicial - (Lista de viveiros/Novo viveiro)">
+  <br>
   <label>Tela inicial - (Lista de viveiros / Novo viveiro)</label>
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ss2.PNG?raw=true" width="750" title="Controle de ração"alt="accessibility text">
+  <br>
   <label>Tela referente ao Viveiro selecionado e seus respectivos modulos</label>
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacao.PNG?raw=true" width="750" title="Controle de ração"alt="accessibility text">
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacaoModal.PNG?raw=true" width="350" title="Controle de ração"alt="accessibility text">
+  <br>
   <label>Tela de controle de ração do viveiro</label>
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssCameras.PNG?raw=true" width="750" title="Controle de ração"alt="accessibility text">
+  <br>
   <label>Tela de exibição das câmeras de segurança do viveiro</label>
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssMedicoes.PNG?raw=true" width="350" title="Controle de ração"alt="accessibility text">
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssMedicoesModal.PNG?raw=true" width="350" title="Controle de ração"alt="accessibility text">
+  <br>
   <label>Tela - Manter medições coletas, referente a qualidade da água do viveiro</label>
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssAeradores.PNG?raw=true" width="750" title="Controle de ração"alt="accessibility text">
+  <br>
   <label>Tela de controle e monitoramento dos aeradores do viveiro</label>
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRelatorios.PNG?raw=true" width="750" title="Controle de ração"alt="accessibility text">
+  <br>
   <label>Tela onde serão exibidos os dados gerais do viveiro e seções de relatórios para possiveis melhorias no manejo</label>
 </p>
 
