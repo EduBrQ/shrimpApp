@@ -11,7 +11,8 @@
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssRacaoModal.PNG?raw=true" width="700" title="Controle de ração"alt="accessibility text">
   <br>
   <label>Tela de controle de ração do viveiro</label>
-  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssCameras.PNG?raw=true" width="750" title="Controle de ração"alt="accessibility text">
+  <br>
+  <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssCameras.PNG?raw=true" width="850" title="Controle de ração"alt="accessibility text">
   <br>
   <label>Tela de exibição das câmeras de segurança do viveiro</label>
   <img src="https://raw.githubusercontent.com/EduBrQ/shrimpApp/factory/src/assets/img/ssMedicoes.PNG?raw=true" width="750" title="Controle de ração"alt="accessibility text">
