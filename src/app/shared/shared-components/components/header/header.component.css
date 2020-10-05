@@ -127,14 +127,14 @@ h1 {
   font-size: 24px;
   font-weight: 800;
   font-family: monospace;
-  /* background: -webkit-linear-gradient(45deg, #9f0000, #ffae00 70%); */
-  background: rgb(131, 58, 180);
+  background: -webkit-linear-gradient(45deg, #9f0000, #ffae00 70%);
+  /* background: rgb(131, 58, 180);
   background: linear-gradient(
     90deg,
     rgb(95, 58, 180) 0%,
     rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
+    rgba(252, 176, 69, 1) 100% */
+  /* ); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
