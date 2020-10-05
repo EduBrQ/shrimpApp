@@ -1,7 +1,7 @@
 # ShrimpApp
 
 
-![Screenshot](https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss1.PNG?raw=true)
+![Screenshot](https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss1.png)
 ![alt text](https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ss2.jpeg?raw=true)
 ![alt text](https://github.com/EduBrQ/shrimpApp/tree/factory/src/assets/img/ssRacao.PNG?raw=true)
 
