@@ -5,7 +5,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CamerasComponent } from './components/cameras/cameras.component';
 import { RacaoComponent } from './components/racao/racao.component';
 import { AeradoresComponent } from './components/aeradores/aeradores.component';
-import { ListaViveirosComponent } from './components/viveiros/lista-viveiros.component';
 import { ViveiroComponent } from './components/viveiros/viveiro/viveiro.component';
 import { AnotacoesComponent } from './components/anotacoes/anotacoes.component';
 import { FeedbacksComponent } from './components/feedbacks/feedbacks.component';
@@ -19,10 +18,6 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
-  },
-  {
-    path: 'viveiros',
-    component: ListaViveirosComponent
   },
   {
     path: 'viveiro/:id',
