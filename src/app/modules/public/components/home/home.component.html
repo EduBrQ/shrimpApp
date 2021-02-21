@@ -2,12 +2,13 @@
 <app-container-formulario backGradient="true" tituloClasse="h4" titulo="Viveiros">
   <div>
     <div class="box mr-4">
-      <img style=" cursor: pointer" class="img-btn-acesso mb-2 plus-btn" src="assets/img/plus.svg" alt="">
+      <img (click)="addViveiro()" style=" cursor: pointer" class="img-btn-acesso mb-2 plus-btn"
+        src="assets/img/plus.svg" alt="">
     </div>
   </div>
   <div class="animation-fade row">
 
-    <div style="max-width: max-content;" class="col-md-4 d-flex justify-content-center text-center container mb-4 mt-4">
+    <div class="col-md-4 d-flex justify-content-center container mb-4 mt-4">
       <div *ngFor="let viveiro of viveiros">
         <div class="box mr-4" (click)="visualizarViveiro(viveiro.id)">
           <button class="btn-acesso btn-acesso-dir align-self-end">

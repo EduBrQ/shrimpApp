@@ -44,8 +44,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" [disabled]="!formRacao.valid"
-            (click)="adicionarRacao()">Salvar</button>
+          <button type="button" class="btn btn-primary" (click)="adicionarRacao()">Salvar</button>
         </div>
       </div>
     </div>
@@ -72,6 +71,7 @@
         <th scope="col">Data</th>
         <th scope="col">Manhã</th>
         <th scope="col">Tarde</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody *ngFor="let racao of racao">
@@ -79,7 +79,16 @@
         <th scope="row">{{racao.data}}</th>
         <td>{{racao.qntManha}} kg</td>
         <td>{{racao.qntTarde}} kg</td>
+        <td>
+          <button (click)="removerColeta(racao.id)">Remover</button>
+        </td>
       </tr>
     </tbody>
   </table>
+
+  <div>
+    <a><strong>Total: </strong> {{racaoTotal}} kg</a>
+    <br>
+    <a><strong>Gasto estimado: </strong> R$ {{gastoRacao}},00 </a>
+  </div>
 </app-container-formulario>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ValidatorsService } from 'app/shared/shared-services/validators-service.service';
+import { ColetaRacao } from './models/racao.model';
 
 @Component({
   selector: 'app-racao',
@@ -10,9 +11,11 @@ import { ValidatorsService } from 'app/shared/shared-services/validators-service
 })
 export class RacaoComponent implements OnInit {
   viveiroID: any;
-  racao: { data: string; qntManha: number; qntTarde: number; }[];
+  racao: Array<ColetaRacao>;
   formRacao: FormGroup;
   formSubmitAttempt: boolean;
+  racaoTotal = 0;
+  gastoRacao = 0;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -25,36 +28,44 @@ export class RacaoComponent implements OnInit {
     this.viveiroID = this.activatedRoute.snapshot.parent.params.id;
     this.racao = [
       {
+        id: 1,
         data: '14/06/2020',
         qntManha: 5,
         qntTarde: 5
       },
       {
+        id: 2,
         data: '15/06/2020',
         qntManha: 5,
         qntTarde: 5
       },
       {
+        id: 3,
         data: '16/06/2020',
         qntManha: 7,
         qntTarde: 7
       },
       {
+        id: 4,
         data: '17/06/2020',
         qntManha: 7,
         qntTarde: 7
       },
       {
+        id: 5,
         data: '18/06/2020',
         qntManha: 8,
         qntTarde: 8
       },
       {
+        id: 6,
         data: '19/06/2020',
         qntManha: 8,
         qntTarde: 8
       },
-    ]
+    ];
+
+    this.calcularRacaoTotal();
   }
 
   criarFormulario() {
@@ -78,19 +89,27 @@ export class RacaoComponent implements OnInit {
   }
 
   adicionarRacao() {
-    // const data = 20;
-    // this.racao.push({
-    //   data: `${data + 1}/06/2020`,
-    //   qntManha: 9,
-    //   qntTarde: 9
-    // })
     this.formSubmitAttempt = true;
     if (this.formRacao.valid) {
+      this.formRacao.get('data').patchValue(this.formRacao.get('data').value);
       this.racao.push(this.formRacao.getRawValue());
-      alert('form submitted');
+      this.calcularRacaoTotal();
     } else {
       this.validateFormService.validateAllFormFields(this.formRacao);
     }
+  }
+
+  calcularRacaoTotal() {
+    this.racaoTotal = 0;
+    this.racao.forEach(element => {
+      this.racaoTotal = this.racaoTotal + element.qntManha + element.qntTarde;
+    });
+    this.gastoRacao = this.racaoTotal * 3;
+  }
+
+  removerColeta(id) {
+    this.racao.splice(this.racao.findIndex(item => id === item.id), 1);
+    this.calcularRacaoTotal();
   }
 
 }
