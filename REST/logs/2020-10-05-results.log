@@ -1,0 +1,67 @@
+{"module":"account.app","level":"error","message":"Could not create a table named environment: The security token included in the request is invalid.","timestamp":"2020-10-05T22:29:57.792Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named environment: The security token included in the request is invalid.","timestamp":"2020-10-05T22:31:38.039Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named environment: The security token included in the request is invalid.","timestamp":"2020-10-05T22:34:14.524Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named environment: The security token included in the request is invalid.","timestamp":"2020-10-05T22:34:39.362Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:36:53.147Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:36:53.181Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:39:28.751Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:39:28.780Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:41:54.965Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:41:54.990Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:42:13.196Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:42:13.222Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:44:14.615Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:44:14.639Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:46:49.062Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:46:49.088Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:52:16.381Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:52:16.401Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:52:51.331Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:52:51.355Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:54:28.455Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:54:28.478Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:55:06.881Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:55:06.909Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:55:32.751Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:55:32.776Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:56:13.974Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:56:13.996Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:58:19.443Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:58:19.476Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:58:56.731Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:58:56.754Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:59:37.388Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:59:37.411Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T00:59:59.307Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T00:59:59.329Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:32:45.685Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:32:45.709Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:33:31.357Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:33:31.379Z"}
+{"module":"account.app","level":"info","message":{"_events":{},"_eventsCount":0,"config":{"host":"localhost","port":3306,"user":"root","password":"root","database":"teste","connectTimeout":10000,"insecureAuth":false,"supportBigNumbers":false,"bigNumberStrings":false,"dateStrings":false,"trace":true,"stringifyObjects":false,"timezone":"local","flags":"","ssl":false,"localInfile":true,"multipleStatements":false,"typeCast":true,"maxPacketSize":0,"charsetNumber":33,"clientFlags":455631},"_socket":{"connecting":true,"_hadError":false,"_parent":null,"_host":"localhost","_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":true,"emitClose":false,"autoDestroy":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":false,"_events":{"end":[null,null],"connect":[null,null]},"_eventsCount":5,"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":false,"decodeStrings":false,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":true,"bufferProcessing":false,"writecb":null,"writelen":0,"afterWriteTickInfo":null,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":0,"prefinished":false,"errorEmitted":false,"emitClose":false,"autoDestroy":false,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":true,"allowHalfOpen":false,"_sockname":null,"_pendingData":null,"_pendingEncoding":"","server":null,"_server":null,"timeout":10000},"_protocol":{"_events":{"end":[null,null]},"_eventsCount":7,"readable":true,"writable":true,"_config":{"host":"localhost","port":3306,"user":"root","password":"root","database":"teste","connectTimeout":10000,"insecureAuth":false,"supportBigNumbers":false,"bigNumberStrings":false,"dateStrings":false,"trace":true,"stringifyObjects":false,"timezone":"local","flags":"","ssl":false,"localInfile":true,"multipleStatements":false,"typeCast":true,"maxPacketSize":0,"charsetNumber":33,"clientFlags":455631},"_connection":"[Circular]","_callback":null,"_fatalError":null,"_quitSequence":null,"_handshake":true,"_handshaked":false,"_ended":false,"_destroyed":false,"_queue":[{"_events":{"end":[null,null]},"_eventsCount":5,"_callSite":{},"_ended":false,"_timer":{"_object":"[Circular]","_timeout":null},"_config":{"host":"localhost","port":3306,"user":"root","password":"root","database":"teste","connectTimeout":10000,"insecureAuth":false,"supportBigNumbers":false,"bigNumberStrings":false,"dateStrings":false,"trace":true,"stringifyObjects":false,"timezone":"local","flags":"","ssl":false,"localInfile":true,"multipleStatements":false,"typeCast":true,"maxPacketSize":0,"charsetNumber":33,"clientFlags":455631},"_handshakeInitializationPacket":null}],"_handshakeInitializationPacket":null,"_parser":{"_supportBigNumbers":false,"_buffer":{"type":"Buffer","data":[]},"_nextBuffers":{"bufs":[],"size":0},"_longPacketBuffers":{"bufs":[],"size":0},"_offset":0,"_packetEnd":null,"_packetHeader":null,"_packetOffset":null,"_nextPacketNumber":0,"_encoding":"utf-8","_paused":false}},"_connectCalled":true,"state":"disconnected","threadId":null},"timestamp":"2020-10-06T01:34:50.085Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:34:50.088Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:34:50.108Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:35:32.708Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:35:32.731Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:40:13.588Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:40:13.610Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:40:34.800Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:40:34.824Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:40:48.932Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:40:48.961Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:41:14.518Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:41:14.540Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:41:47.202Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:41:47.224Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:42:30.328Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:42:30.353Z"}
+{"module":"account.app","level":"info","message":"DynamoDB table named environment created successful!","timestamp":"2020-10-06T01:43:12.016Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:43:12.040Z"}
+{"module":"account.app","level":"info","message":"MySQL table named environment created successful!","timestamp":"2020-10-06T01:45:02.540Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:45:02.561Z"}
+{"module":"account.app","level":"info","message":"MySQL table named environment created successful!","timestamp":"2020-10-06T01:45:39.661Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:45:39.686Z"}
+{"module":"account.app","level":"info","message":"MySQL table named environment created successful!","timestamp":"2020-10-06T01:51:10.289Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:51:10.309Z"}
+{"module":"account.app","level":"info","message":"MySQL table named environment created successful!","timestamp":"2020-10-06T01:52:50.557Z"}
+{"module":"account.app","level":"info","message":"Server running on port 4000","timestamp":"2020-10-06T01:52:50.583Z"}

@@ -1,0 +1,104 @@
+{"module":"account.app","level":"error","message":"Could not create a table named racao: connect ECONNREFUSED 127.0.0.1:3306","timestamp":"2020-10-11T15:49:46.680Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T15:49:46.703Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: connect ECONNREFUSED 127.0.0.1:3306","timestamp":"2020-10-11T15:51:31.734Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T15:51:31.755Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: connect ECONNREFUSED 127.0.0.1:3306","timestamp":"2020-10-11T15:52:21.922Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T15:52:21.945Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T15:52:51.723Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T15:52:51.748Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-11T16:22:58.952Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:22:58.978Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:24:14.084Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:24:14.105Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao/ HTTP/1.1\" 404 126 3.843 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:24:20.330Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/racao/ HTTP/1.1\" 404 126 0.387 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:26:39.869Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:27:40.439Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:27:40.461Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/racao/ HTTP/1.1\" 404 126 2.123 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:27:48.256Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/racao HTTP/1.1\" 404 124 0.783 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:28:00.236Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" 404 124 0.314 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:28:05.608Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" 404 124 0.216 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:28:14.158Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET / HTTP/1.1\" 302 36 3.492 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:28:21.753Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference HTTP/1.1\" 301 193 2.006 ms \"http://localhost:8723/\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:28:21.758Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/ HTTP/1.1\" 200 3054 1.265 ms \"http://localhost:8723/api/reference\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:28:21.770Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao/1 HTTP/1.1\" 404 128 0.295 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:28:27.451Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao/ HTTP/1.1\" 404 126 0.257 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:28:32.842Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao/?racao_id HTTP/1.1\" 404 144 0.974 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:32:22.532Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao/?racao_id=1 HTTP/1.1\" 404 148 0.374 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:32:25.084Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao/?racao_id=1 HTTP/1.1\" 404 148 0.263 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:33:10.505Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao/?racao_id HTTP/1.1\" 404 144 0.206 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:33:17.511Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao/racao_id?racao_id=1 HTTP/1.1\" 404 164 0.726 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:33:31.285Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao/racao_id?racao_id=1 HTTP/1.1\" 404 164 0.213 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:34:45.265Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:34:54.354Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:34:54.376Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao/racao_id?racao_id=1 HTTP/1.1\" 404 164 2.798 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:34:56.674Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" 404 124 0.395 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:35:03.945Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/racao HTTP/1.1\" 404 124 0.335 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:35:12.243Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" 404 124 0.246 ms \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:19.580Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /favicon.ico HTTP/1.1\" 404 130 0.315 ms \"http://localhost:8723/v1/racao\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:19.628Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/enviroment HTTP/1.1\" 404 134 0.204 ms \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:24.931Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/enviroments HTTP/1.1\" 404 136 0.215 ms \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:27.841Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/enviroment HTTP/1.1\" 404 134 0.205 ms \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:31.138Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference HTTP/1.1\" 301 193 1.769 ms \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:42.613Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/ HTTP/1.1\" 200 3054 1.755 ms \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:42.617Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui-init.js HTTP/1.1\" 200 17174 0.181 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:42.637Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui.css HTTP/1.1\" 200 142933 12.687 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:42.646Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui-standalone-preset.js HTTP/1.1\" 200 311804 22.142 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:42.663Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui-bundle.js HTTP/1.1\" 200 986283 9.723 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:35:42.680Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:36:12.821Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:36:12.843Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/environment/1 HTTP/1.1\" 404 140 2.493 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:36:30.184Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/racao/1 HTTP/1.1\" 404 128 0.248 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:36:40.560Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/enviroment/1 HTTP/1.1\" 404 138 0.229 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:36:55.205Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/enviroment HTTP/1.1\" 404 134 0.250 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:36:58.178Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/environment HTTP/1.1\" - - 2.213 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:37:19.023Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/racao HTTP/1.1\" 404 124 0.255 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:37:29.501Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" 404 124 0.289 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:38:00.398Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" 404 124 0.187 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:38:04.664Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:39:07.727Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:39:07.749Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" 404 124 2.216 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:39:11.166Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:40:21.870Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:40:21.892Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" 404 124 2.251 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:40:36.396Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:45:32.869Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:45:32.898Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" - - 2.639 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:46:32.843Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/ HTTP/1.1\" 304 - 2.830 ms \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:46:35.857Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui-init.js HTTP/1.1\" 304 - 0.360 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:46:35.876Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui.css HTTP/1.1\" 304 - 6.134 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:46:35.879Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui-bundle.js HTTP/1.1\" 304 - 7.124 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:46:35.881Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui-standalone-preset.js HTTP/1.1\" 304 - 26.269 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-11T16:46:35.901Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-11T16:48:10.858Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:48:10.882Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/racao HTTP/1.1\" 400 78 3.974 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T16:48:27.702Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:49:54.239Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:49:54.260Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:51:53.222Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:51:53.244Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:52:55.466Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:52:55.502Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:55:03.274Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:55:03.298Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:55:48.051Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:55:48.072Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:56:47.369Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:56:47.391Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T16:58:36.805Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T16:58:36.841Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" - - 2.729 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T17:00:40.605Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T17:01:50.747Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T17:01:50.768Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-11T17:02:22.961Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T17:02:22.982Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" - - 2.803 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T17:05:27.998Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T17:05:46.620Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T17:05:46.640Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /v1/racao HTTP/1.1\" - - 2.813 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T17:05:56.675Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/racao HTTP/1.1\" 200 2 22.823 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T17:05:58.227Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/racao HTTP/1.1\" 200 2 14.833 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T17:06:22.899Z"}
+{"module":"account.app","level":"info","message":"::1 - \"POST /v1/racao HTTP/1.1\" 200 2 11.638 ms \"-\" \"PostmanRuntime/7.26.5\"\n","timestamp":"2020-10-11T17:06:40.799Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T17:07:49.988Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T17:07:50.009Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-11T17:08:39.659Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-11T17:08:39.680Z"}

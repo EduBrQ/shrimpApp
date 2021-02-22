@@ -1,0 +1,374 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+  - description: HTTP Local Host
+    url: http://localhost:4000
+info:
+  description: Service used to manage environment temperature and humidity.
+  version: "v1"
+  title: Environment Monitor API
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+
+paths:
+  # environment
+  /v1/environment:
+    post:
+      tags:
+        - environment
+      summary: Save a enviroment
+      operationId: saveEnvironment
+      description: Save a environment data.
+      responses:
+        '201':
+          description: Request successful.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Environment'
+        '400':
+          $ref: 'https://api.swaggerhub.com/domains/nutescicatriza/api-components/v1#/components/responses/400'
+        '401':
+          $ref: 'https://api.swaggerhub.com/domains/nutescicatriza/api-components/v1#/components/responses/401'
+        '403':
+          $ref: 'https://api.swaggerhub.com/domains/nutescicatriza/api-components/v1#/components/responses/403'
+        '500':
+          $ref: 'https://api.swaggerhub.com/domains/nutescicatriza/api-components/v1#/components/responses/500'
+      requestBody:
+        required: true
+        description: User data to be submitted.
+        content:
+          application/json:
+            schema:
+              example:
+                temperature: 25
+                humidity: 66
+    get:
+      tags:
+        - environment
+      summary: Get environment.
+      operationId: getEnvironment
+      description: "Get a list of environment data."
+      responses:
+        '200':
+          description: Successful requisition.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Environment'
+        '401':
+          $ref: '#/components/responses/400'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '500':
+          $ref: '#/components/responses/500'
+  /v1/environment/last:
+    get:
+      tags:
+        - environment
+      summary: Recover last environment.
+      operationId: getLastEnvironment
+      description: Returns thye last environment data.
+      responses:
+        '200':
+          description: Successful requisition.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Environment'
+        '401':
+          $ref: '#/components/responses/400'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '500':
+          $ref: '#/components/responses/500'
+  /v1/environment/{environment_id}:
+    get:
+      tags:
+        - environment
+      summary: Recover a environment.
+      operationId: getEnvironmentById
+      description: Returns a unique environment data by id.
+      parameters:
+        - in: path
+          name: environment_id
+          required: true
+          description: Id of environment
+          example: '5da8dd8d83fd4835257f0c46'
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful requisition.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Environment'
+        '401':
+          $ref: '#/components/responses/400'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '500':
+          $ref: '#/components/responses/500'
+    delete:
+      tags:
+        - environment
+      summary: Delete environment data.
+      description: Delete the environment data.
+      operationId: deleteEnvironment
+      parameters:
+        - name: environment_id
+          in: path
+          required: true
+          description: Id of environment
+          example: '5da8dd8d83fd4835257f0c46'
+          schema:
+            type: string
+      responses:
+        '204':
+          $ref: '#/components/responses/204'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '406':
+          $ref: '#/components/responses/406'
+        '429':
+          $ref: '#/components/responses/429'
+        '500':
+          $ref: '#/components/responses/500'
+
+components:
+  schemas:
+    Error:
+      type: object
+      required:
+        - code
+        - message
+        - description
+      properties:
+        code:
+          type: integer
+          format: int32
+          description: Code of error
+        message:
+          type: string
+          description: Error message.
+          example: The message of error.
+        description:
+          type: string
+          description: Error description.
+          example: The description of error.
+    Environment:
+      type: object
+      required:
+        - id
+        - created_at
+        - temperature
+        - humidity
+      properties:
+        id:
+          readOnly: true
+          type: string
+          description: "Automatically generated key field."
+          example: "5da8dd8d83fd4835257f0c46"
+        created_at:
+          readOnly: true
+          type: string
+          format: date-time
+          description: "Date automatically generated in UTC format according to ISO 8601 at the time the resource is saved."
+          example: "2020-08-18T09:52:30Z"
+        temperature:
+          $ref: '#/components/schemas/Temperature'
+        humidity:
+          $ref: '#/components/schemas/Humidity'
+    Temperature:
+      type: object
+      required:
+        - value
+        - unit
+      properties:
+        value:
+          type: number
+          description: "Value of environment temperature"
+          example: 24
+        unit:
+          type:  string
+          description: "Unit of temperature. Default is Celsius."
+          enum: ['°C', '°K', '°F']
+          example: "°C"
+    Humidity:
+      type: object
+      required:
+        - value
+        - unit
+      properties:
+        value:
+          type: number
+          description: "Value of environment humidity percentage."
+          example: 24
+        unit:
+          type:  string
+          description: "Unit of humidity."
+          example: "%"
+  parameters:
+    fieldsParam:
+      in: query
+      name: fields
+      required: false
+      description: >-
+        Allows you to retrieve only the information you want. To do this,
+        simply provide the name of the attributes separated by commas.
+        For example: **_fields=field1,field2_** indicates that only
+        field1 and field2 should be listed in the query result.
+      schema:
+        type: array
+        items:
+          type: string
+    pageParam:
+      in: query
+      name: page
+      required: false
+      description: The page number.
+      schema:
+        type: integer
+        format: int32
+        minimum: 1
+        default: 1
+    limitParam:
+      in: query
+      name: limit
+      required: false
+      description: The number of items to return.
+      schema:
+        type: integer
+        format: int32
+        maximum: 100
+        default: 20
+    sortParam:
+      in: query
+      name: sort
+      required: false
+      description: >-
+        Contains the names of the attributes, separated by commas, that
+        will be used to sort the result of the query. For ascending sort,
+        use the '+' character before the attribute name. For descending
+        sort, use the '-' character before the attribute name. By default,
+        the order is ascending, so the '+' symbol is optional, just enter
+        the attribute.
+      schema:
+        type: array
+        items:
+          type: string
+        default:
+          - created_at
+    filterParam:
+      in: query
+      name: filter
+      schema:
+        type: object
+      style: form
+      explode: true
+      description: >-
+        To filter a collection by multiple concurrent attributes or filter
+        multiple values for an attribute, simply use the attribute/property
+        name with an equal sign and the expected values, separated by a comma.
+        **_property=value1,value2,value3_**. The query is not case sensitive.
+        Example: **_?name=elvis,john_** to retrieve exactly the same users with
+        elvis or john name.
+        For filtering with logical operators, just follow the syntax:
+        **_property=operator:value_**. The available operators are:
+         - **gt** -> Defines which value of the attribute is greater than
+                    (that is,>) the specified value.
+         - **gte** -> Defines which attribute value is greater than or equal to
+                    (that is,>=) the specified value.
+         - **lt** -> Define the value of the attribute to be less than (that is, <)
+                    the specified value.
+         - **lte** -> Defines which value of the attribute is less than or equal to
+                    (that is, <=) the specified value.
+
+        Example: **_?field1=gte:80&age=lt:100_** to recover the users with age
+        is greater than or equal to 80 and less then 100.
+
+
+  responses:
+    '204':
+      description: >-
+        Operation performed successfully. There is no data to be returned
+    '400':
+      description: >-
+        Request can not be met, syntactically incorrect or violates the
+        schema. Normally it occurs due to validation issues, such as fields
+        that are expected in the request body and not passed.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    '401':
+      description: Authentication failed due to invalid authentication credentials.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    '403':
+      description: User or client does not have scope to access this resource.
+      content:
+        application/json:
+          schema:
+            $ref: 'https://api.swaggerhub.com/domains/haniot/haniot-components/1.0.0#/components/schemas/Error'
+    '404':
+      description: >-
+        Specified resource does not exist. Usually when the URI is incorrect
+        or the resource is not found, or even no longer exists.
+      content:
+        application/json:
+          schema:
+            $ref: 'https://api.swaggerhub.com/domains/haniot/haniot-components/1.0.0#/components/schemas/Error'
+    '406':
+      description: >-
+        The server is not implementing the media type requested by the
+        client for the application response. Only application/json is
+        currently accepted.
+      content:
+        application/json:
+          schema:
+            $ref: 'https://api.swaggerhub.com/domains/haniot/haniot-components/1.0.0#/components/schemas/Error'
+    '409':
+      description: ->
+        Conflicts have probably occurred with data that can not be duplicated.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    '415':
+      description: >-
+        The server does not support the requested payload format. Only
+        application/json is accepted.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    '429':
+      description: The rate limit for requests exceeded.
+      content:
+        application/json:
+          schema:
+            $ref: 'https://api.swaggerhub.com/domains/haniot/haniot-components/1.0.0#/components/schemas/Error'
+    '500':
+      description: >-
+        An internal server error occurred. Although the client appears to
+        provide a correct request, the server encountered an unexpected
+        condition that prevented it from responding to the request.
+      content:
+        application/json:
+          schema:
+            $ref: 'https://api.swaggerhub.com/domains/haniot/haniot-components/1.0.0#/components/schemas/Error'

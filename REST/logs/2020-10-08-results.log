@@ -1,0 +1,32 @@
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-08T23:41:50.288Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-08T23:42:49.786Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-08T23:42:49.811Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-08T23:44:01.996Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-08T23:44:02.019Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-08T23:48:03.890Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-08T23:48:03.913Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET / HTTP/1.1\" 302 72 4.925 ms \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-08T23:48:23.263Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference HTTP/1.1\" 301 193 2.046 ms \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-08T23:48:23.267Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/ HTTP/1.1\" 200 3054 2.572 ms \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-08T23:48:23.281Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui.css HTTP/1.1\" 200 142933 3.263 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-08T23:48:23.328Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui-init.js HTTP/1.1\" 200 17174 0.195 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-08T23:48:23.333Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui-standalone-preset.js HTTP/1.1\" 200 311804 3.121 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-08T23:48:23.338Z"}
+{"module":"account.app","level":"info","message":"::1 - \"GET /api/reference/swagger-ui-bundle.js HTTP/1.1\" 200 986283 2.769 ms \"http://localhost:8723/api/reference/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\"\n","timestamp":"2020-10-08T23:48:23.353Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-08T23:52:14.401Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-08T23:52:14.423Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-08T23:52:39.451Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-08T23:52:39.472Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-08T23:56:16.075Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-08T23:56:16.096Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-08T23:56:53.395Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-08T23:56:53.419Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-08T23:59:16.756Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-08T23:59:16.777Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-09T00:01:04.675Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-09T00:01:04.696Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-09T00:04:40.381Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-09T00:04:40.401Z"}
+{"module":"account.app","level":"info","message":"MySQL table named racao created successful!","timestamp":"2020-10-09T00:05:10.919Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-09T00:05:10.940Z"}
+{"module":"account.app","level":"error","message":"Could not create a table named racao: ER_TABLE_EXISTS_ERROR: Table 'racao' already exists","timestamp":"2020-10-09T00:05:19.429Z"}
+{"module":"account.app","level":"info","message":"Server running on port 8723","timestamp":"2020-10-09T00:05:19.450Z"}
