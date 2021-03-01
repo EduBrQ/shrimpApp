@@ -1,9 +1,11 @@
-<app-container-formulario tituloClasse="h4" titulo="MEDIÇÕES">
+<app-container-formulario tituloClasse="h4" titulo="Dados coletados da água">
 
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModal">
-    Inserir
-  </button>
+  <div class="text-right">
+    <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModal">
+      Inserir Coleta
+    </button>
+  </div>
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -17,56 +19,75 @@
           </button>
         </div>
         <div class="modal-body">
-          <form>
+
+          <form [formGroup]="formMedicoes">
 
             <div class="form-group">
-              <label for="recipient-name" class="col-form-label font-weight-bold">O²:</label>
-              <input type="text" class="form-control" id="recipient-name">
+              <label for="recipient-name" [ngClass]="displayFieldCss('data')"
+                class="col-form-label font-weight-bold control-label" required>Data:</label>
+              <input formControlName="data" type="date" class="form-control">
+              <app-field-error-display [displayError]="isFieldValid('data')" errorMsg="Insira uma data">
+              </app-field-error-display>
             </div>
+
             <div class="form-group">
-              <label for="message-text" class="col-form-label font-weight-bold">pH:</label>
-              <input class="form-control" id="message-text">
+              <label for="recipient-name" [ngClass]="displayFieldCss('oxigenio')"
+                class="col-form-label font-weight-bold control-label" required>O²:</label>
+              <input formControlName="oxigenio" type="number" class="form-control">
+              <app-field-error-display [displayError]="isFieldValid('oxigenio')" errorMsg="Insira a coleta do Oxigênio">
+              </app-field-error-display>
             </div>
+
             <div class="form-group">
-              <label for="message-text" class="col-form-label font-weight-bold">Temperatura:</label>
-              <input class="form-control" id="message-text">
+              <label for="recipient-name" [ngClass]="displayFieldCss('ph')"
+                class="col-form-label font-weight-bold control-label" required>pH:</label>
+              <input formControlName="ph" type="number" class="form-control">
+              <app-field-error-display [displayError]="isFieldValid('ph')" errorMsg="Insira a coleta do pH">
+              </app-field-error-display>
             </div>
+
             <div class="form-group">
-              <label for="message-text" class="col-form-label font-weight-bold">Alcalinidade:</label>
-              <input class="form-control" id="message-text">
+              <label for="recipient-name" [ngClass]="displayFieldCss('temperatura')"
+                class="col-form-label font-weight-bold control-label" required>Temperatura:</label>
+              <input formControlName="temperatura" type="number" class="form-control">
+              <app-field-error-display [displayError]="isFieldValid('temperatura')" errorMsg="Insira uma quantidade">
+              </app-field-error-display>
             </div>
+
             <div class="form-group">
-              <label for="message-text" class="col-form-label font-weight-bold">Dureza:</label>
-              <input class="form-control" id="message-text">
+              <label for="recipient-name" [ngClass]="displayFieldCss('alcalinidade')"
+                class="col-form-label font-weight-bold control-label" required>Alcalinidade:</label>
+              <input formControlName="alcalinidade" type="number" class="form-control">
+              <app-field-error-display [displayError]="isFieldValid('alcalinidade')" errorMsg="Insira uma quantidade">
+              </app-field-error-display>
             </div>
+
             <div class="form-group">
-              <label for="message-text" class="col-form-label font-weight-bold">Transparência:</label>
-              <input class="form-control" id="message-text">
+              <label for="recipient-name" [ngClass]="displayFieldCss('dureza')"
+                class="col-form-label font-weight-bold control-label" required>Dureza:</label>
+              <input formControlName="dureza" type="number" class="form-control">
+              <app-field-error-display [displayError]="isFieldValid('dureza')" errorMsg="Insira uma quantidade">
+              </app-field-error-display>
+            </div>
+
+            <div class="form-group">
+              <label for="recipient-name" [ngClass]="displayFieldCss('transparencia')"
+                class="col-form-label font-weight-bold control-label" required>Transparência:</label>
+              <input formControlName="transparencia" type="number" class="form-control">
+              <app-field-error-display [displayError]="isFieldValid('transparencia')" errorMsg="Insira uma quantidade">
+              </app-field-error-display>
             </div>
           </form>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Salvar</button>
+          <button type="button" (click)="adicionarMedicoes()" class="btn btn-primary">Salvar</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- <div>
-    <form>
-      <div class="row">
-        <div class="col-sm-2 text-center">
-          <label>Data inicial</label>
-          <input type="date" class="form-control" placeholder="Data inicial">
-        </div>
-        <div class="col-sm-2 text-center">
-          <label>Data final</label>
-          <input type="date" class="form-control" placeholder="Data final">
-        </div>
-      </div>
-    </form>
-  </div> -->
 
   <table style="text-align: center;" class="table table-striped table-responsive">
     <thead style="background-color: black; color: white" class="thead-dark">
@@ -77,130 +98,22 @@
         <th scope="col">Temperatura</th>
         <th scope="col">Alcalinidade</th>
         <th scope="col">Dureza</th>
-        <th scope="col">Cor</th>
         <th scope="col">Transparência</th>
+        <th></th>
       </tr>
     </thead>
-    <tbody>
+    <tbody *ngFor="let medicao of medicoes">
       <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
-      </tr>
-      <tr>
-        <th scope="row">22/04/2020</th>
-        <td>22ppm</td>
-        <td>26°C</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>15ppm</td>
-        <td>Verde claro</td>
-        <td>15cm</td>
+        <th scope="row">{{medicao.data | date:'dd/MM/yyyy, h:mm a'}}</th>
+        <th>{{medicao.oxigenio}} ppm</th>
+        <td>{{medicao.ph}} ppm</td>
+        <td>{{medicao.temperatura}} °C</td>
+        <td>{{medicao.alcalinidade}} ppm</td>
+        <td>{{medicao.dureza}} ppm</td>
+        <td>{{medicao.transparencia}} cm</td>
+        <td class="text-right">
+          <button class="btn btn-danger mr-4" (click)="removerColeta(medicao.id)">Remover</button>
+        </td>
       </tr>
     </tbody>
   </table>

@@ -1,5 +1,17 @@
 <div class="col-sm">
-  <h6>{{aerador.nome}}</h6>
+  <div style="margin-left: 33px;" class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h6 style="margin-top: 9px;" class="">{{aerador.id}}</h6>
+      </div>
+      <div class="col-sm">
+        <button class="btn btn-block" (click)="removerAerador(aerador)" mat-icon-button color="warn"
+          aria-label="Remover aerador">
+          <mat-icon>cancel</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
   <button [disabled]="loading" (click)="ligarDesligarAerador(aerador)"
     class="btn-acesso btn-acesso-dir align-self-end mb-2">
     <img class="img-btn-acesso" src="/assets/img/{{aerador.status}}.svg" alt="">

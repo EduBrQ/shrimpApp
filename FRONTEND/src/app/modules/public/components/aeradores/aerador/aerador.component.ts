@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { AeradorDTO } from 'app/modules/public/models/interface/aerador-dto.model';
 
 @Component({
@@ -9,6 +9,7 @@ import { AeradorDTO } from 'app/modules/public/models/interface/aerador-dto.mode
 export class AeradorComponent implements OnInit {
 
   @Input() aerador: AeradorDTO;
+  @Output() eventRemoverAerador = new EventEmitter<any>();
   public loading: boolean;
 
   constructor() { }
@@ -22,6 +23,10 @@ export class AeradorComponent implements OnInit {
       aerador.status = !aerador.status;
     }, 7000);
     this.loading = true;
+  }
+
+  removerAerador(aerador) {
+    this.eventRemoverAerador.emit(aerador);
   }
 
 }

@@ -14,6 +14,11 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { DataUtilService } from './shared/util/data-util.service';
 import { SharedComponentsModule } from './shared/shared-components/shared-components.module';
 import { ChartsModule } from 'ng2-charts';
+
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+
+registerLocaleData(localePt);
 @NgModule({
   declarations: [
     AppComponent

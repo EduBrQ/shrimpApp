@@ -24,9 +24,9 @@ export class HomeComponent implements OnInit {
         id: 1,
         tamanho: 1500,
         ipCamera: 'http://208.72.70.171:80/mjpg/video.mjpg',
-        densidade: 70000,
-        latitude: '',
-        longitude: '',
+        densidade: 70,
+        latitude: '-7.397094',
+        longitude: '-35.540758',
         laboratorio: 'AquaTec',
         proprietario: 'Erica',
         dataInicioCiclo: '15/08/2020'
@@ -35,11 +35,11 @@ export class HomeComponent implements OnInit {
         id: 2,
         tamanho: 1100,
         ipCamera: 'http://208.72.70.171:80/mjpg/video.mjpg',
-        densidade: 50000,
-        latitude: '',
-        longitude: '',
+        densidade: 50,
+        latitude: '-7.392803',
+        longitude: ' -35.542637',
         laboratorio: 'AquaTec',
-        proprietario: 'Dudu',
+        proprietario: 'Eduardo',
         dataInicioCiclo: '15/08/2020'
       }
     ]
@@ -60,24 +60,10 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  public visualizarViveiro(viveiroID) {
-    this.router.navigate([`../viveiro/${viveiroID}`]);
+  public visualizarViveiro(viveiro: ViveiroDTO) {
+    this.router.navigate([`../viveiro/${viveiro.id}`]);
+    localStorage.setItem('viveiro', JSON.stringify(viveiro));
   }
-
-  // public addViveiro() {
-  //   this.viveiros.push({
-  //     id: this.viveiros.length + 1,
-  //     tamanho: 2200,
-  //     ipCamera: 'http://208.72.70.171:80/mjpg/video.mjpg',
-  //     densidade: 100000,
-  //     latitude: '',
-  //     longitude: '',
-  //     laboratorio: 'AquaTec',
-  //     proprietario: 'Eraldo',
-  //     dataInicioCiclo: '15/08/2020'
-  //   })
-
-  // }
 
   isFieldValid(field: string) {
     return (!this.formViveiro.get(field).valid && this.formViveiro.get(field).touched) ||

@@ -29,37 +29,37 @@ export class RacaoComponent implements OnInit {
     this.racao = [
       {
         id: 1,
-        data: '14/06/2020',
+        data: new Date('2020-12-12'),
         qntManha: 5,
         qntTarde: 5
       },
       {
         id: 2,
-        data: '15/06/2020',
+        data: new Date('2020-12-12'),
         qntManha: 5,
         qntTarde: 5
       },
       {
         id: 3,
-        data: '16/06/2020',
+        data: new Date('2020-12-12'),
         qntManha: 7,
         qntTarde: 7
       },
       {
         id: 4,
-        data: '17/06/2020',
+        data: new Date('2020-12-12'),
         qntManha: 7,
         qntTarde: 7
       },
       {
         id: 5,
-        data: '18/06/2020',
+        data: new Date('2020-12-12'),
         qntManha: 8,
         qntTarde: 8
       },
       {
         id: 6,
-        data: '19/06/2020',
+        data: new Date('2020-12-12'),
         qntManha: 8,
         qntTarde: 8
       },

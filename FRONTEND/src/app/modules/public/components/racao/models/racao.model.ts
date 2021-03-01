@@ -1,6 +1,6 @@
 export interface ColetaRacao {
   id: number;
-  data: string;
+  data: Date;
   qntManha: number;
   qntTarde: number;
 }

@@ -10,7 +10,7 @@
 
     <div class="col-md-4 d-flex justify-content-center container mb-4 mt-4">
       <div *ngFor="let viveiro of viveiros">
-        <div class="box mr-4" (click)="visualizarViveiro(viveiro.id)">
+        <div class="box mr-4" (click)="visualizarViveiro(viveiro)">
           <button class="btn-acesso btn-acesso-dir align-self-end">
             <img class="img-btn-acesso" src="assets/img/planilha.svg" alt="">
             <span class="text-acesso">Viveiro {{viveiro.id}}</span>
@@ -38,7 +38,7 @@
             <div class="form-group">
               <label for="recipient-name" [ngClass]="displayFieldCss('volume')"
                 class="col-form-label font-weight-bold control-label" required>Volume do Viveiro (m³):</label>
-              <input formControlName="volume" mask="0.000" type="text" class="form-control">
+              <input formControlName="volume" type="number" class="form-control">
               <app-field-error-display [displayError]="isFieldValid('volume')" errorMsg="Insira a dimensão do viveiro">
               </app-field-error-display>
             </div>
