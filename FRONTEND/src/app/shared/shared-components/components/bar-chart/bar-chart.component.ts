@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
+import { Component, Input, OnInit } from '@angular/core';
+import { ChartOptions, ChartType, ChartDataSets, ChartLayoutOptions } from 'chart.js';
 import { Label } from 'ng2-charts';
 
 @Component({
@@ -8,12 +8,16 @@ import { Label } from 'ng2-charts';
   styleUrls: ['./bar-chart.component.scss']
 })
 
-export class BarChartComponent {
+export class BarChartComponent implements OnInit {
 
   @Input() fluxo: string;
 
+  layout: ChartLayoutOptions = {
+  };
+
   barChartOptions: ChartOptions = {
     responsive: true,
+    aspectRatio: 3.6
   };
   barChartLabels: Label[]
   barChartType: ChartType = 'bar';

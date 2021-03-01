@@ -17,6 +17,11 @@ import { ListaViveirosComponent } from './components/viveiros/lista-viveiros.com
 import { AnotacoesComponent } from './components/anotacoes/anotacoes.component';
 import { FeedbacksComponent } from './components/feedbacks/feedbacks.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
 @NgModule({
   declarations: [
@@ -39,7 +44,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PublicRoutingModule,
     SharedComponentsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgxMaskModule.forRoot(),
+    MatSelectModule,
+    MatFormFieldModule
   ]
 })
 export class PublicModule { }

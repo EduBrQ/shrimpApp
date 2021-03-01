@@ -36,6 +36,7 @@ import { ChartsModule } from 'ng2-charts';
     SharedComponentsModule,
     ChartsModule,
     ReactiveFormsModule
+
   ],
   providers: [
     DataUtilService,

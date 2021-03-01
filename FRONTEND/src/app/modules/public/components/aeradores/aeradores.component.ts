@@ -18,15 +18,15 @@ export class AeradoresComponent implements OnInit {
     this.aeradores = [];
     this.aeradores.push(
       {
-        nome: 'Aerador - 01',
+        nome: 'Aerador - 1',
         status: false
       },
       {
-        nome: 'Aerador - 02',
+        nome: 'Aerador - 2',
         status: true
       },
       {
-        nome: 'Aerador - 03',
+        nome: 'Aerador - 3',
         status: false
       }
     );
@@ -36,5 +36,12 @@ export class AeradoresComponent implements OnInit {
     this.viveiroID = this.activatedRoute.snapshot.parent.params.id;
   }
 
+  adicionarAerador() {
+    const id = this.aeradores.length + 1;
+    this.aeradores.push({
+      nome: `Aerador - ${id}`,
+      status: false
+    });
+  }
 
 }
