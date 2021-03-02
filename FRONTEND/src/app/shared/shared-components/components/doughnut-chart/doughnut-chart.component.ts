@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ChartType } from 'chart.js';
 import { MultiDataSet, Label } from 'ng2-charts';
 
@@ -8,12 +8,17 @@ import { MultiDataSet, Label } from 'ng2-charts';
   styleUrls: ['./doughnut-chart.component.scss']
 })
 
-export class DoughnutChartComponent {
+export class DoughnutChartComponent implements OnInit {
 
-  doughnutChartLabels: Label[] = ['pH', 'Temperatura', 'O2'];
-  doughnutChartData: MultiDataSet = [
-    [55, 25, 20]
-  ];
+  @Input() medicao: string;
+  @Input() valor: number;
+
+  doughnutChartLabels: Label[] = [];
+  doughnutChartData: MultiDataSet = [[]];
   doughnutChartType: ChartType = 'doughnut';
 
+  ngOnInit() {
+    this.doughnutChartLabels.push(this.medicao, '')
+    this.doughnutChartData[0].push(this.valor, 100 - this.valor);
+  }
 }
