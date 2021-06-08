@@ -80,6 +80,7 @@ export class HomeComponent implements OnInit {
   adicionarViveiro() {
     this.formSubmitAttempt = true;
     if (this.formViveiro.valid) {
+      this.formViveiro.reset()
       const id = this.viveiros.length + 1;
       this.formViveiro.get('id').patchValue(id);
       console.log(this.formViveiro.getRawValue());

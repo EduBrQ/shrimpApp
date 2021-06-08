@@ -119,3 +119,16 @@
 .plus-btn:hover {
   opacity: 0.7;
 }
+
+
+@media screen and (max-width: 576px) {
+  .viveiro {
+    margin-right: 0px !important;
+    margin-bottom: 15px;
+  }
+
+  .viveiro-lista {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}

@@ -115,3 +115,30 @@
   padding-top: 7px;
   padding-bottom: 7px;
 }
+
+@media screen and (max-width: 576px) {
+  .text-acesso {
+    font-size: 10px;
+  }
+
+  .img-btn-acesso{
+    width: 55px;
+  }
+
+  .btn-acesso{
+    width: 130px !important;
+    height: 130px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .btn-acesso{
+    width: 180px;
+    height: 180px;
+    margin-bottom: 10px;
+  }
+  .text-acesso {
+    font-size: 10px;
+  }
+}

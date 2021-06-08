@@ -27,7 +27,47 @@ export class AnotacoesComponent implements OnInit {
         alcalinidade: 22,
         dureza: 22,
         transparencia: 22,
-      }
+      },
+      {
+        id: 1,
+        data: new Date(1614611114),
+        oxigenio: 22,
+        ph: 22,
+        temperatura: 22,
+        alcalinidade: 22,
+        dureza: 22,
+        transparencia: 22,
+      },
+      {
+        id: 1,
+        data: new Date(1614611114),
+        oxigenio: 22,
+        ph: 22,
+        temperatura: 22,
+        alcalinidade: 22,
+        dureza: 22,
+        transparencia: 22,
+      },
+      {
+        id: 1,
+        data: new Date(1614611114),
+        oxigenio: 22,
+        ph: 22,
+        temperatura: 22,
+        alcalinidade: 22,
+        dureza: 22,
+        transparencia: 22,
+      },
+      {
+        id: 1,
+        data: new Date(1614611114),
+        oxigenio: 22,
+        ph: 22,
+        temperatura: 22,
+        alcalinidade: 22,
+        dureza: 22,
+        transparencia: 22,
+      },
     ];
 
     this.criarFormulario();

@@ -44,32 +44,37 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" (click)="adicionarRacao()">Salvar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="adicionarRacao()">Salvar</button>
         </div>
       </div>
     </div>
   </div>
 
-  <table style="text-align: center;" class="table table-striped table-responsive">
-    <thead style="background-color: black; color: white" class="thead-dark">
-      <tr>
-        <th scope="col">Data</th>
-        <th scope="col" class="text-right">Manhã</th>
-        <th scope="col" class="text-right">Tarde</th>
-        <th scope="col"></th>
-      </tr>
-    </thead>
-    <tbody *ngFor="let racao of racao">
-      <tr>
-        <th scope="row">{{racao.data | date:'dd/MM/yyyy'}}</th>
-        <td class="text-right">{{racao.qntManha}} kg</td>
-        <td class="text-right">{{racao.qntTarde}} kg</td>
-        <td class="text-right">
-          <button class="btn btn-info mr-4" (click)="removerColeta(racao.id)">Remover</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-racao">
+    <table style="text-align: center;" class="table">
+      <thead style="background-color: black; color: white" class="thead-dark">
+        <tr>
+          <th scope="col">Data</th>
+          <th scope="col" class="text-right">Manhã</th>
+          <th scope="col" class="text-right">Tarde</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let racao of racao">
+        <tr>
+          <th scope="row">{{racao.data | date:'dd/MM/yyyy'}}</th>
+          <td class="text-right">{{racao.qntManha}} kg</td>
+          <td class="text-right">{{racao.qntTarde}} kg</td>
+          <td class="text-right">
+
+            <button class="btn btn-info" (click)="removerColeta(racao.id)">
+              <mat-icon style="display: flex;" aria-hidden="false" aria-label="Apagar">delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <div>
     <a><strong>Total: </strong> {{racaoTotal}} kg</a>

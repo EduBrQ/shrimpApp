@@ -8,9 +8,9 @@
   </div>
   <div class="animation-fade row">
 
-    <div class="col-md-4 d-flex justify-content-center container mb-4 mt-4">
+    <div class="viveiro-lista col-md-4 d-flex justify-content-center container mb-4 mt-4">
       <div *ngFor="let viveiro of viveiros">
-        <div class="box mr-4" (click)="visualizarViveiro(viveiro)">
+        <div class="box mr-4 viveiro" (click)="visualizarViveiro(viveiro)">
           <button class="btn-acesso btn-acesso-dir align-self-end">
             <img class="img-btn-acesso" src="assets/img/planilha.svg" alt="">
             <span class="text-acesso">Viveiro {{viveiro.id}}</span>
@@ -83,7 +83,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" (click)="adicionarViveiro()">Salvar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal"
+            (click)="adicionarViveiro()">Salvar</button>
         </div>
       </div>
     </div>

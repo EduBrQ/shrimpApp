@@ -1,14 +1,14 @@
 <app-header></app-header>
-<app-container-formulario *ngIf="flag" backGradient="true" tituloClasse="h4"
-  titulo="Viveiro {{viveiro.id}} - [ {{viveiro.proprietario}} / {{viveiro.densidade}} mil / {{viveiro.laboratorio | uppercase}} ]">
+<app-container-formulario *ngIf="flag" backGradient="true" tituloClasse="h6"
+  titulo="Viveiro {{viveiro.id}} - ( {{viveiro.proprietario}} / {{viveiro.densidade}} mil / {{viveiro.laboratorio | uppercase}} ) ">
 
   <nav class="animation-fade row">
-    <div class="text-right mb-4">
+    <!-- <div class="text-right mb-4">
       <a class="btn btn-success" style="margin-right: 70px"
         href="http://maps.google.com/maps?q=loc:{{viveiro.latitude}},{{viveiro.longitude}}&navigate=yes"
         target="_blank">Ver
         Localização</a>
-    </div>
+    </div> -->
     <div class="col-md-4 d-flex justify-content-center text-center container">
       <div class=" box">
         <button class="btn-acesso btn-acesso-dir align-self-end" routerLink="feebacks">
