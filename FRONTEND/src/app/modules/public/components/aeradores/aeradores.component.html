@@ -8,7 +8,6 @@
     <div *ngFor="let aerador of aeradores; let i = index"
       class="col-md-4 d-flex justify-content-center text-center container">
       <div>
-
         <app-aerador (eventRemoverAerador)="removerAerador($event)" [aerador]="aerador"></app-aerador>
       </div>
     </div>
